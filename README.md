@@ -9,7 +9,7 @@ An AI-powered Sports Quiz Generation application that creates engaging sports-re
 A complete walkthrough of the project is available here:
 
 **📹 Screen Recording:**  
-[SPORTS_QUIZ_AGENT](https://drive.google.com/file/d/1wXznIdr9bW-LKF_BHp6UvqR_uz_Lvfv5/view?usp=drive_link)
+[SPORTS_QUIZ_AGENT](https://drive.google.com/file/d/1HNPL7KflfxLFzUMJa2irLYGLHNK4s3DG/view?usp=sharing)
 
 The demo includes:
 - Sport selection
