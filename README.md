@@ -1,6 +1,6 @@
 # 🏆 AI-Powered Sports Quiz Generation Agent
 
-An AI-powered Sports Quiz Generation application that creates engaging sports-related multiple-choice quizzes using *Retrieval-Augmented Generation (RAG). The system retrieves relevant sports knowledge from **ChromaDB* and leverages *Google Gemini* to generate factually grounded quiz questions. For recent sports information, it can also utilize web search to improve the relevance and freshness of the generated content.
+An AI-powered Sports Quiz Generation application that creates engaging sports-related multiple-choice quizzes using **Retrieval-Augmented Generation (RAG)**. The system retrieves relevant sports knowledge from **ChromaDB** and leverages **Google Gemini** to generate factually grounded quiz questions. For recent sports information, it can also utilize web search to improve the relevance and freshness of the generated content.
 
 ---
 
@@ -8,7 +8,7 @@ An AI-powered Sports Quiz Generation application that creates engaging sports-re
 
 A complete walkthrough of the project is available here:
 
-*📹 Screen Recording:*  
+**📹 Screen Recording:**  
 [SPORTS_QUIZ_AGENT](https://drive.google.com/file/d/1wXznIdr9bW-LKF_BHp6UvqR_uz_Lvfv5/view?usp=drive_link)
 
 The demo includes:
@@ -48,7 +48,7 @@ The application combines Retrieval-Augmented Generation (RAG) with a Large Langu
 
 # 🏗️ System Architecture
 
-
+```
 [User Input: "Football, Hard"]
        │
        ▼
@@ -68,13 +68,13 @@ The application combines Retrieval-Augmented Generation (RAG) with a Large Langu
        │
        ▼  (Generates structured response)
  [Four Multiple Choice Questions displayed in Streamlit UI]
-
+```
 
 ---
 
 # 🔄 Project Workflow
 
-
+```
 User Input
      │
      ▼
@@ -94,7 +94,7 @@ Generate Quiz using Gemini
      │
      ▼
 Display Quiz in Streamlit
-
+```
 
 
 # 🛠️ Tech Stack
@@ -132,7 +132,7 @@ Display Quiz in Streamlit
 
 # 📂 Project Structure
 
-
+```
 sports-quiz-agent/
 │
 ├── .env                  # Hidden file containing sensitive API keys
@@ -153,7 +153,7 @@ sports-quiz-agent/
 │
 └── app.py                # The front-end UI. Coordinates everything and renders it.
 
-
+```
 
 ---
 
@@ -161,10 +161,10 @@ sports-quiz-agent/
 
 ## 1. Clone the Repository
 
-bash
+```bash
 git clone https://github.com/<YOUR_GITHUB_USERNAME>/sports-quiz-agent.git
 cd sports-quiz-agent
-
+```
 
 ---
 
@@ -172,39 +172,39 @@ cd sports-quiz-agent
 
 ### Windows
 
-bash
+```bash
 python -m venv venv
 venv\Scripts\activate
-
+```
 
 ### Linux / macOS
 
-bash
+```bash
 python3 -m venv venv
 source venv/bin/activate
-
+```
 
 ---
 
 ## 3. Install Dependencies
 
-bash
+```bash
 pip install -r requirements.txt
-
+```
 
 ---
 
 ## 4. Configure Environment Variables
 
-Create a .env file in the project root.
+Create a `.env` file in the project root.
 
 Example:
 
-env
+```env
 GEMINI_API_KEY=your_google_gemini_api_key
+```
 
-
-Replace your_google_gemini_api_key with your own API key.
+Replace `your_google_gemini_api_key` with your own API key.
 
 ---
 
@@ -212,36 +212,36 @@ Replace your_google_gemini_api_key with your own API key.
 
 Start the Streamlit application:
 
-bash
+```bash
 streamlit run app.py
-
+```
 
 The application will open in your browser at:
 
-
+```
 http://localhost:8501
-
+```
 
 ---
 
 # 🚀 How It Works
 
-1. The user selects a *sport* and *difficulty level*.
-2. The AI agent retrieves relevant sports facts from *ChromaDB* using semantic similarity search.
-3. If recent or time-sensitive information is needed, the agent performs a *DuckDuckGo web search*.
+1. The user selects a **sport** and **difficulty level**.
+2. The AI agent retrieves relevant sports facts from **ChromaDB** using semantic similarity search.
+3. If recent or time-sensitive information is needed, the agent performs a **DuckDuckGo web search**.
 4. The retrieved context from both sources is combined into a single prompt.
-5. The prompt is sent to *Google Gemini*, which generates:
+5. The prompt is sent to **Google Gemini**, which generates:
    - Four to five multiple-choice questions
    - Four answer options (A, B, C, D)
    - Correct answer
    - Short explanation
-6. The generated quiz is displayed in the *Streamlit* dashboard.
+6. The generated quiz is displayed in the **Streamlit** dashboard.
 
 ---
 
 # 🧠 RAG Workflow
 
-
+```
 Offline Sports Knowledge
            │
            ▼
@@ -267,7 +267,7 @@ Offline Sports Knowledge
                   │
                   ▼
         Quiz Generation
-
+```
 
 ---
 
@@ -281,7 +281,7 @@ Offline Sports Knowledge
 
 # 📋 Example Output
 
-
+```
 Sport: Cricket
 
 Difficulty: Easy
@@ -302,21 +302,21 @@ B. Australia and England
 
 Explanation:
 The Ashes is one of cricket's oldest and most famous Test cricket rivalries between Australia and England.
-
+```
 
 ---
 
 # ✅ Assignment Requirements Covered
 
-- ✔️ Sport selection
-- ✔️ Difficulty selection
-- ✔️ Multiple-choice quiz generation
-- ✔️ Quiz regeneration
-- ✔️ ChromaDB integration
-- ✔️ Retrieval-Augmented Generation (RAG)
-- ✔️ Web search integration
-- ✔️ Streamlit dashboard
-- ✔️ Grounded quiz generation using retrieved knowledge
+- ✔ Sport selection
+- ✔ Difficulty selection
+- ✔ Multiple-choice quiz generation
+- ✔ Quiz regeneration
+- ✔ ChromaDB integration
+- ✔ Retrieval-Augmented Generation (RAG)
+- ✔ Web search integration
+- ✔ Streamlit dashboard
+- ✔ Grounded quiz generation using retrieved knowledge
 
 ---
 
